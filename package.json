@@ -1,0 +1,213 @@
+{
+  "name": "react-generic-animate",
+  "version": "0.0.1",
+  "description": "Generic animation component.",
+  "keywords": [
+    "generic",
+    "react",
+    "animation"
+  ],
+  "homepage": "https://torben.website/react-generic-animate",
+  "bugs": {
+    "email": "info@torben.website",
+    "url": "https://github.com/thaibault/react-generic-animate/issues"
+  },
+  "license": "CC-BY-3.0",
+  "main": "index.js",
+  "author": {
+    "name": "Torben Sickert",
+    "email": "info@torben.website",
+    "url": "https://torben.website"
+  },
+  "files": [
+    "index.d.ts",
+    "type.d.ts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thaibault/react-generic-animate"
+  },
+  "scripts": {
+    "build": "yarn build:types; yarn build:plain",
+    "build:plain": "weboptimizer build",
+    "build:types": "weboptimizer build:types",
+    "check": "yarn check:types; yarn lint",
+    "check:types": "weboptimizer check:types",
+    "clear": "weboptimizer clear",
+    "document": "weboptimizer document",
+    "lint": "yarn clear && weboptimizer lint",
+    "prepare": "yarn build",
+    "postversion": "yarn publish --non-interactive; git push --tags && git push",
+    "serve": "weboptimizer serve",
+    "start": "yarn serve",
+    "test": "yarn clear && weboptimizer test '{__reference__: \"target:minimal\"}'",
+    "test:browser": "yarn clear && weboptimizer test:browser '{__reference__: \"target:minimal\"}'",
+    "test:coverage": "yarn clear && weboptimizer test:coverage",
+    "test:coverage:report": "yarn clear && weboptimizer test:coverage:report '{__reference__: \"target:minimal\"}'",
+    "update": "yarn version --patch",
+    "update:documentation": "documentation-website",
+    "watch": "weboptimizer build --watch"
+  },
+  "runkitExample": "require('@babel/runtime/package.json')\n\nglobalThis.window = globalThis\n\nconst {GenericAnimate} = require('react-input-material')\n\nGenericAnimate.webComponentAdapterWrapped",
+  "devDependencies": {
+    "@babel/eslint-parser": "*",
+    "@babel/plugin-transform-proto-to-assign": "*",
+    "@babel/preset-react": "*",
+    "@teamsupercell/typings-for-css-modules-loader": "*",
+    "@types/jsdom": "*",
+    "@types/node": "*",
+    "@types/react": "*",
+    "@types/react-dom": "*",
+    "@types/react-transition-group": "*",
+    "@types/webpack-env": "*",
+    "@typescript-eslint/eslint-plugin": "*",
+    "@typescript-eslint/parser": "*",
+    "clientnode": "*",
+    "css-loader": "*",
+    "cssnano": "*",
+    "documentation-website": "*",
+    "eslint": "*",
+    "eslint-config-google": "*",
+    "eslint-plugin-jsdoc": "*",
+    "identity-obj-proxy": "*",
+    "jest": "*",
+    "jsdoc": "*",
+    "mini-css-extract-plugin": "*",
+    "postcss": "*",
+    "postcss-import": "*",
+    "postcss-loader": "*",
+    "postcss-nested": "*",
+    "postcss-preset-env": "*",
+    "react": ">=17",
+    "react-dom": "*",
+    "react-generic-dummy": "*",
+    "react-generic-tools": "*",
+    "react-transition-group": "*",
+    "react-useanimations": "*",
+    "style-loader": "*",
+    "stylelint": "*",
+    "stylelint-config-standard": "*",
+    "tslib": "*",
+    "typescript-plugin-css-modules": "*",
+    "web-component-wrapper": "*",
+    "weboptimizer": "*",
+    "webpack-dev-server": "*"
+  },
+  "peerDependencies": {
+    "@babel/runtime": "*",
+    "@types/react": "*",
+    "@types/react-dom": "*",
+    "@types/react-transition-group": "*",
+    "clientnode": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-transition-group": "*",
+    "react-useanimations": "*",
+    "tslib": "*"
+  },
+  "peerDependenciesMeta": {
+    "@babel/runtime": {
+      "optional": true
+    },
+    "@types/react": {
+      "optional": true
+    },
+    "@types/react-dom": {
+      "optional": true
+    },
+    "@types/react-transition-group": {
+      "optional": true
+    },
+    "clientnode": {
+      "optional": true
+    },
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    },
+    "react-transition-group": {
+      "optional": true
+    },
+    "react-useanimations": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=18",
+    "npm": ">=9"
+  },
+  "sideEffects": false,
+  "documentationWebsite": {
+    "tagline": "Generic react utilities.",
+    "trackingCode": "TODO"
+  },
+  "webOptimizer": {
+    "commandLine": {
+      "test": {
+        "environments": [
+          "jsdom"
+        ]
+      }
+    },
+    "generic": {
+      "entry": {
+        "./import.module": "./import.module",
+        "index": "./index.ts",
+        "type": "./type"
+      },
+      "supportedBrowsers": [
+        "IE >= 11",
+        "last 2 versions",
+        "> 5%"
+      ]
+    },
+    "injection": {
+      "entry": {
+        "__evaluate__": "2 < self.givenCommandLineArguments.length && self.givenCommandLineArguments[2] === 'serve' ? ['./index.css', './playground'] : 2 < self.givenCommandLineArguments.length && self.givenCommandLineArguments[2].startsWith('test') ? {testBundle: './test'} : self.generic.entry"
+      }
+    },
+    "module": {
+      "cascadingStyleSheet": {
+        "exclude": false,
+        "options": {
+          "import": {
+            "filter": {
+              "__evaluate__": "(url) => !url.includes('.css')"
+            }
+          }
+        }
+      },
+      "preprocessor": {
+        "cascadingStyleSheet": {
+          "additional": {
+            "plugins": {
+              "pre": {
+                "__append__": "require('postcss-nested')"
+              }
+            }
+          }
+        },
+        "javaScript": {
+          "options": {
+            "presets": {
+              "#": "TODO: Remove \"@babel/react\" options when updated to babel 8. NOTE: We have to disable module export/import transformation to allow tree shaking by the final (minimizer).",
+              "__evaluate__": "[['@babel/react', {runtime: 'automatic'}], ['@babel/preset-env', {loose: true, modules: false, targets: self.targetTechnology === 'node' ? {node: 'current'} : {browsers: self.generic.supportedBrowsers, node: 'current'}}], '@babel/typescript'].concat((self.debug || !self.module.optimizer.babelMinify.module || 2 < self.givenCommandLineArguments.length && self.givenCommandLineArguments[2] === 'document') ? [] : [['minify', self.module.optimizer.babelMinify.module]])"
+            }
+          }
+        }
+      }
+    },
+    "target:minimal": {
+      "module": {
+        "aliases": {
+          "#": "Remove unneeded optional dependencies.",
+          "react-useanimations$": "react-generic-dummy",
+          "react-useanimations/lib/lock$": "react-generic-dummy",
+          "react-useanimations/lib/plusToX$": "react-generic-dummy"
+        }
+      }
+    }
+  }
+}
