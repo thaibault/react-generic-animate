@@ -3601,9 +3601,9 @@ cli-table3@^0.5.0:
     colors "^1.1.2"
 
 clientnode@*:
-  version "3.0.1049"
-  resolved "https://registry.yarnpkg.com/clientnode/-/clientnode-3.0.1049.tgz#6c07789c20dbb5f5186e50c8ad5a739377a10e66"
-  integrity sha512-6RqFOgl7gqkQ1TMVHdGPmB+zCLrYqbCNG8s6iTrA6Yhq9KU4EQKssbcWhZ0WWe8TEGTMZIE5f6UcfPAmeQCxyQ==
+  version "3.0.1050"
+  resolved "https://registry.yarnpkg.com/clientnode/-/clientnode-3.0.1050.tgz#74f335422d7d2e78ddcf43d621723e304e776818"
+  integrity sha512-AY8MlNCRhceh4TpUn+g4G9xcFxo75G0+K7Y+tQX5pb9olGHtCMxOfTarXGHw0wgjF1qo1U+qK9+CIeb5GRL7SA==
 
 cliui@^4.0.0:
   version "4.1.0"
@@ -7675,14 +7675,14 @@ react-dom@*:
     scheduler "^0.23.0"
 
 react-generic-dummy@*:
-  version "0.0.35"
-  resolved "https://registry.yarnpkg.com/react-generic-dummy/-/react-generic-dummy-0.0.35.tgz#5f3ce391ba77defc5753d953b36f61ba9538b2ff"
-  integrity sha512-z2WPSfR2evSqKb15OaJXUrbuvVZQLp86Nxa2QbXPDMjpx/svtW5TKsqf6zz2oBwdpshZsFOrtuC5a/LAUBpzAA==
+  version "0.0.36"
+  resolved "https://registry.yarnpkg.com/react-generic-dummy/-/react-generic-dummy-0.0.36.tgz#4c064b5488723264577008380e1dc48323bd1ee0"
+  integrity sha512-c0VtcdTSfJ2sE0WG8y+KuHxMVzPFmYTqFYbIMepR60rgSHVafLoTxSivPy3oG1CMn9rX2+IoLJUym3cY6dfFew==
 
 react-generic-tools@*:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/react-generic-tools/-/react-generic-tools-0.0.3.tgz#9a533dec179e203079b55a17bc8c4107dd827b71"
-  integrity sha512-tEdQEiuJJmDRYC03z7nAaDfP4zt67FxyTmstBZ3AOuwFGteql2q+F/TPzY4YAaLamj5gSvDnbyAzzB5x6X8NvA==
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/react-generic-tools/-/react-generic-tools-0.0.4.tgz#d94873233ef1dd0c9048741474d1080d442dc6a5"
+  integrity sha512-HbRX78ywaoZFKx4ACDAWNMIgRN5YXV5EqoAKzJm5itwCve6+ikRjl49SQnsyZELczDY08644yjrnUyy4bYg+JA==
 
 react-is@^16.13.1:
   version "16.13.1"
@@ -9010,9 +9010,9 @@ wbuf@^1.1.0, wbuf@^1.7.3:
     minimalistic-assert "^1.0.0"
 
 web-component-wrapper@*:
-  version "0.0.449"
-  resolved "https://registry.yarnpkg.com/web-component-wrapper/-/web-component-wrapper-0.0.449.tgz#f0b9abfb88ba85f6db6e21cdbe301f401cc358d1"
-  integrity sha512-A1ZawGdZnTQ/wwLCYZi9IAxXRy2aFeSavSiTWOPbRSBDH8PAjanGmVvqHuK0Nomu+yPBgEakVWXguxAsIH7NVA==
+  version "0.0.450"
+  resolved "https://registry.yarnpkg.com/web-component-wrapper/-/web-component-wrapper-0.0.450.tgz#0a2520bf9d2f9c845241873c02c14abd2762c02a"
+  integrity sha512-KHF5cPycX4dySOsReUfF4afLGl4UXWq2sqVMesBTQqK8+uXb3S/6YrG4kltLncIfW+fGKNbSMuqdZC/2w79U2Q==
 
 webidl-conversions@^7.0.0:
   version "7.0.0"
@@ -9020,9 +9020,9 @@ webidl-conversions@^7.0.0:
   integrity sha512-VwddBukDzu71offAQR975unBIGqfKZpM+8ZX6ySk8nYhVoo5CYaZyzt3YBvYtRtO+aoGlqxPg/B87NGVZ/fu6g==
 
 weboptimizer@*:
-  version "2.0.1329"
-  resolved "https://registry.yarnpkg.com/weboptimizer/-/weboptimizer-2.0.1329.tgz#090c4314ac5bc1ccc1938c79460d5fb72dc9cb7a"
-  integrity sha512-OdqmlSUKH4JjiivpbnKXrpXehYu6NWJrURWJgIsD9YBw9BzevTNdSggnbdFyIZoJ3djxSXRf6WmGtbmfdCqobw==
+  version "2.0.1330"
+  resolved "https://registry.yarnpkg.com/weboptimizer/-/weboptimizer-2.0.1330.tgz#d48ebd6bf1ead272d743436d429717ff0fb1396f"
+  integrity sha512-spZNV/uCXqrBgIabkjrFnB2JbQXmYGMGRXHdtOIO/VxZG//OtQ3i20EhPKyR2xoZCLdUMPvd5E9Wcw3KvrWOeg==
   dependencies:
     "@babel/core" "*"
     "@babel/plugin-proposal-decorators" "*"

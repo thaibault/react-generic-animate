@@ -38,8 +38,9 @@ const Application = () => {
         <GenericAnimate children="Fade it!" in={!fadeState} timeout={2000}/>
     </div>)
 }
+
 window.onload = ():void =>
-    createRoot(document.querySelector('application')!).render(<Application />)
+    createRoot(document.querySelector('body')!).render(<Application />)
 // region vim modline
 // vim: set tabstop=4 shiftwidth=4 expandtab:
 // vim: foldmethod=marker foldmarker=region,endregion:
