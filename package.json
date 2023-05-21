@@ -21,6 +21,8 @@
   },
   "files": [
     "index.d.ts",
+    "index.compiled.css",
+    "style.module.css",
     "type.d.ts"
   ],
   "repository": {
@@ -153,7 +155,7 @@
     },
     "generic": {
       "entry": {
-        "index": "./index.ts",
+        "index": "./index.tsx",
         "type": "./type"
       },
       "supportedBrowsers": [
