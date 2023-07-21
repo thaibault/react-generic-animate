@@ -27,7 +27,7 @@ const Application = () => {
     const [fadeState, setFadeState] = useState<boolean>(false)
 
     useEffect(():(() => void) => Tools.timeout(
-        ():void => setFadeState((value:boolean):boolean => !value), 2 * 1000
+        () => setFadeState((value:boolean) => !value), 2 * 1000
     ).clear)
 
     return (<div>
