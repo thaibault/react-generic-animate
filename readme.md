@@ -26,4 +26,4 @@ Project status
 Use case
 --------
 
-Dummy react component.
+Generic react animation component.
