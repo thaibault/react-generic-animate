@@ -7833,9 +7833,9 @@ react-generic-dummy@*:
   integrity sha512-aeWTrgz9Tv5U8rjMCPZ9aFZ8H56XrYlaApJpG13VSVPixPwSP4g5/5FrUHtQwIznJYNAS5dIT9igt2Zit3EZKg==
 
 react-generic-tools@*:
-  version "0.0.24"
-  resolved "https://registry.yarnpkg.com/react-generic-tools/-/react-generic-tools-0.0.24.tgz#8405855d22a1d849b59dd079b846f4e73b5b9f78"
-  integrity sha512-5eWRmIt70E/JRIX0J2hy3SRalRgE87wRwzLn4CAqsun3xH0WT63SDwt/BkoHlTmZXivJ/TcsAuCvmMb2HI4i+A==
+  version "0.0.25"
+  resolved "https://registry.yarnpkg.com/react-generic-tools/-/react-generic-tools-0.0.25.tgz#676701ce5c84b876eb15dd511e1d4e90a64ef27a"
+  integrity sha512-QqrARR+3zBqFHMds+o7N+M2/09zuMgU+44JDgzsIVbCNqRgsIoQIMM0Nv6/Zh+dZJLaGsnuFTWkbxouJ0vnjdA==
 
 react-is@^16.13.1:
   version "16.13.1"
@@ -9153,9 +9153,9 @@ wbuf@^1.1.0, wbuf@^1.7.3:
     minimalistic-assert "^1.0.0"
 
 web-component-wrapper@*:
-  version "0.0.465"
-  resolved "https://registry.yarnpkg.com/web-component-wrapper/-/web-component-wrapper-0.0.465.tgz#aa2991a743330c6a235af06f1d033759aa17147b"
-  integrity sha512-kvUfbYeutPJ4k6p2Ypus7pPIGLv+csYuaPy/1w6HwMKFc8Zl2EIAxZzx1IbAtpPd17f/RcK3oxepcJnS0NbW4w==
+  version "0.0.466"
+  resolved "https://registry.yarnpkg.com/web-component-wrapper/-/web-component-wrapper-0.0.466.tgz#b224a8fb74948c51f9a3061c8e8d2f463723a7b7"
+  integrity sha512-J9XJ74P+WEp4tjK4pRvnvKAVnN4LKWWgSZ8B/jjDel3Gcd2e1IXx3QyIrv7ZHhvlO6L3DQyz7VfOOJ69t1btug==
 
 webidl-conversions@^7.0.0:
   version "7.0.0"
