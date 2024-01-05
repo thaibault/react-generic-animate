@@ -7730,14 +7730,14 @@ react-dom@*:
     scheduler "^0.23.0"
 
 react-generic-dummy@*:
-  version "0.0.60"
-  resolved "https://registry.yarnpkg.com/react-generic-dummy/-/react-generic-dummy-0.0.60.tgz#b2c4e714dac4356ee67eb472d9c106c0648d9120"
-  integrity sha512-uApDVr+93ESTp7/suYeEMAi2AQo2Sln4uvmkFTAB5B0ka1u2J4lYTyUBSMCJTgOWyimLt2YpiPTKt25nb8HpYQ==
+  version "0.0.61"
+  resolved "https://registry.yarnpkg.com/react-generic-dummy/-/react-generic-dummy-0.0.61.tgz#b599cf1f1be8663174500f67a237a92e22dff9d6"
+  integrity sha512-Fkj0Q9vFNNDcLlox4j0FIrpvlT601vUyAylfnoCoK2a9rp5pDtAdxlcWj0BGaBfN4V6P3T5pmfI6jG4tC5HLjw==
 
 react-generic-tools@*:
-  version "0.0.32"
-  resolved "https://registry.yarnpkg.com/react-generic-tools/-/react-generic-tools-0.0.32.tgz#02cd8da2f01de7f5b437914ca2cf291fbdb7238d"
-  integrity sha512-pTqkFNdNA8h+A1jYopRk6nXm2zWG/kDc5NUPx+g1umSmNZa+IRs1VHgPgeIzcnIRuCxJcpmbA21I9RI1KUm2JA==
+  version "0.0.33"
+  resolved "https://registry.yarnpkg.com/react-generic-tools/-/react-generic-tools-0.0.33.tgz#00840ef2c95b865b80d44d0c7abea10bed3e5e05"
+  integrity sha512-h0xkF0j155qxkhQw+QiVNYjya8AcMbB+q+pJgZOr+6qUo9GRjIisqQ3omext3mx6wp3POlv4x8iqhVMFbNT2iA==
 
 react-is@^16.13.1:
   version "16.13.1"
