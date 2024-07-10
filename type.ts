@@ -33,7 +33,3 @@ export interface GenericAnimateComponent<Type> extends
         GenericAnimateProps & RefAttributes<HTMLDivElement|HTMLSpanElement>
     )):ReactElement
 }
-// region vim modline
-// vim: set tabstop=4 shiftwidth=4 expandtab:
-// vim: foldmethod=marker foldmarker=region,endregion:
-// endregion
