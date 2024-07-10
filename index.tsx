@@ -17,8 +17,8 @@
     endregion
 */
 // region imports
-import {boolean, number, string} from 'clientnode/property-types'
-import {Mapping} from 'clientnode/type'
+import {Mapping} from 'clientnode'
+import {boolean, number, string} from 'clientnode/dist/property-types'
 import {
     ForwardedRef,
     ForwardRefRenderFunction,
@@ -45,7 +45,6 @@ const CSS_CLASS_NAMES:Mapping = cssClassNames as Mapping
  * Generic animation wrapper component.
  * @param properties - Component given properties object.
  * @param reference - Reference object to forward internal component.
- *
  * @returns React elements.
  */
 export const GenericAnimateInner = function(
@@ -82,11 +81,9 @@ export const GenericAnimateInner = function(
 } as ForwardRefRenderFunction<unknown, Props>
 /**
  * Generic animation wrapper component.
- * @property static:propTypes - Triggers reacts runtime property value checks.
- *
+ * @property propTypes - Triggers reacts runtime property value checks.
  * @param properties - Component given properties object.
  * @param reference - Reference object to forward internal component.
- *
  * @returns React elements.
  */
 export const GenericAnimate:GenericAnimateComponent<
@@ -107,7 +104,3 @@ GenericAnimate.propTypes = {
 }
 // endregion
 export default GenericAnimate
-// region vim modline
-// vim: set tabstop=4 shiftwidth=4 expandtab:
-// vim: foldmethod=marker foldmarker=region,endregion:
-// endregion
