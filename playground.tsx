@@ -41,7 +41,3 @@ const Application = () => {
 
 window.onload = ():void =>
     createRoot(document.querySelector('body')!).render(<Application />)
-// region vim modline
-// vim: set tabstop=4 shiftwidth=4 expandtab:
-// vim: foldmethod=marker foldmarker=region,endregion:
-// endregion
