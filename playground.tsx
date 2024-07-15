@@ -39,5 +39,8 @@ const Application = () => {
     </div>)
 }
 
-window.onload = ():void =>
-    createRoot(document.querySelector('body')!).render(<Application />)
+window.onload = () => {
+    const containerElement = document.createElement('div')
+    document.body.appendChild(containerElement)
+    createRoot(containerElement).render(<Application/>)
+}
