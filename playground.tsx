@@ -17,7 +17,7 @@
     endregion
 */
 // region imports
-import Tools from 'clientnode'
+import {timeout} from 'clientnode'
 import {useEffect, useState} from 'react'
 import {createRoot} from 'react-dom/client'
 
@@ -26,7 +26,7 @@ import {GenericAnimate} from '.'
 const Application = () => {
     const [fadeState, setFadeState] = useState<boolean>(false)
 
-    useEffect(():(() => void) => Tools.timeout(
+    useEffect(():(() => void) => timeout(
         () => setFadeState((value:boolean) => !value), 2 * 1000
     ).clear)
 
@@ -39,9 +39,8 @@ const Application = () => {
     </div>)
 }
 
-window.onload = ():void =>
-    createRoot(document.querySelector('body')!).render(<Application />)
-// region vim modline
-// vim: set tabstop=4 shiftwidth=4 expandtab:
-// vim: foldmethod=marker foldmarker=region,endregion:
-// endregion
+window.onload = () => {
+    const containerElement = document.createElement('div')
+    document.body.appendChild(containerElement)
+    createRoot(containerElement).render(<Application/>)
+}

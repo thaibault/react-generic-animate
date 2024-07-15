@@ -17,7 +17,6 @@
     endregion
 */
 // region imports
-import {Mapping} from 'clientnode'
 import {boolean, number, string} from 'clientnode/dist/property-types'
 import {
     ForwardedRef,
@@ -32,15 +31,15 @@ import {CSSTransition} from 'react-transition-group'
 "namedExport" version of css-loader:
 
 import {
-    genericAnimateClassName,
-    genericAnimateListWrapperClassName,
-    genericAnimateWrapperClassName
+    genericAnimate: genericAnimateClassName,
+    genericAnimateListWrapper: genericAnimateListWrapperClassName,
+    genericAnimateWrapper: genericAnimateWrapperClassName
 } from './style.module'
 */
 import cssClassNames from './style.module'
 import {GenericAnimateComponent, GenericAnimateProps as Props} from './type'
 // endregion
-const CSS_CLASS_NAMES:Mapping = cssClassNames as Mapping
+const CSS_CLASS_NAMES = cssClassNames
 /**
  * Generic animation wrapper component.
  * @param properties - Component given properties object.
@@ -52,7 +51,7 @@ export const GenericAnimateInner = function(
 ):ReactElement {
     return <CSSTransition
         appear
-        classNames={CSS_CLASS_NAMES['generic-animate']}
+        classNames={CSS_CLASS_NAMES.genericAnimate}
         in
         timeout={200}
         unmountOnExit
@@ -61,16 +60,14 @@ export const GenericAnimateInner = function(
         {
             typeof properties.children === 'string' ?
                 <span
-                    className={CSS_CLASS_NAMES['generic-animate__wrapper']}
+                    className={CSS_CLASS_NAMES.genericAnimateWrapper}
                     ref={reference as ForwardedRef<HTMLSpanElement>}
                 >
                     {properties.children}
                 </span> :
                 Array.isArray(properties.children) ?
                     <div
-                        className={CSS_CLASS_NAMES[
-                            'generic-animate__list-wrapper'
-                        ]}
+                        className={CSS_CLASS_NAMES.genericAnimateListWrapper}
                         ref={reference as ForwardedRef<HTMLDivElement>}
                     >
                         {properties.children}
