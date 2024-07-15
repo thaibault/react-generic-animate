@@ -92,7 +92,7 @@
     "tslib": "^2.6.3",
     "typescript-eslint": "^7.16.0",
     "typescript-plugin-css-modules": "^5.1.0",
-    "web-component-wrapper": "^0.0.490",
+    "web-component-wrapper": "^0.0.491",
     "weboptimizer": "^2.0.1486",
     "webpack-dev-server": "^5.0.4"
   },
