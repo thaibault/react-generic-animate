@@ -17,7 +17,7 @@
     endregion
 */
 // region imports
-import Tools from 'clientnode'
+import {timeout} from 'clientnode'
 import {useEffect, useState} from 'react'
 import {createRoot} from 'react-dom/client'
 
@@ -26,7 +26,7 @@ import {GenericAnimate} from '.'
 const Application = () => {
     const [fadeState, setFadeState] = useState<boolean>(false)
 
-    useEffect(():(() => void) => Tools.timeout(
+    useEffect(():(() => void) => timeout(
         () => setFadeState((value:boolean) => !value), 2 * 1000
     ).clear)
 
