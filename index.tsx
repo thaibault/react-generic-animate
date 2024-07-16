@@ -23,7 +23,8 @@ import {
     ForwardRefRenderFunction,
     forwardRef,
     memo as memorize,
-    ReactElement
+    ReactElement,
+    useRef
 } from 'react'
 import {CSSTransition} from 'react-transition-group'
 
@@ -49,10 +50,16 @@ const CSS_CLASS_NAMES = cssClassNames
 export const GenericAnimateInner = function(
     properties:Props, reference?:ForwardedRef<HTMLDivElement|HTMLSpanElement>
 ):ReactElement {
+    if (!reference)
+        reference = useRef(null)
+
     return <CSSTransition
         appear
         classNames={CSS_CLASS_NAMES.genericAnimate}
         in
+
+        nodeRef={reference}
+
         timeout={200}
         unmountOnExit
         {...properties}
@@ -72,7 +79,9 @@ export const GenericAnimateInner = function(
                     >
                         {properties.children}
                     </div> :
-                    properties.children
+                    <span ref={reference as ForwardedRef<HTMLSpanElement>}>
+                        properties.children
+                    </span>
         }
     </CSSTransition>
 } as ForwardRefRenderFunction<unknown, Props>
