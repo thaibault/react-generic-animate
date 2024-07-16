@@ -17,6 +17,7 @@
     endregion
 */
 // region imports
+import {isFunction} from 'clientnode'
 import {boolean, number, string} from 'clientnode/dist/property-types'
 import {
     ForwardedRef,
@@ -39,6 +40,7 @@ import {
 */
 import cssClassNames from './style.module'
 import {GenericAnimateComponent, GenericAnimateProps as Props} from './type'
+import {ENTERING} from 'react-transition-group/Transition'
 // endregion
 const CSS_CLASS_NAMES = cssClassNames
 /**
@@ -53,6 +55,11 @@ export const GenericAnimateInner = function(
     if (!reference)
         reference = useRef(null)
 
+    const content =
+        isFunction(properties.children) ?
+            properties.children(ENTERING) :
+            properties.children
+
     return <CSSTransition
         appear
         classNames={CSS_CLASS_NAMES.genericAnimate}
@@ -65,23 +72,25 @@ export const GenericAnimateInner = function(
         {...properties}
     >
         {
-            typeof properties.children === 'string' ?
+            typeof content === 'string' ?
                 <span
                     className={CSS_CLASS_NAMES.genericAnimateWrapper}
                     ref={reference as ForwardedRef<HTMLSpanElement>}
                 >
-                    {properties.children}
+                    {content}
                 </span> :
-                Array.isArray(properties.children) ?
+                Array.isArray(content) ?
                     <div
                         className={CSS_CLASS_NAMES.genericAnimateListWrapper}
                         ref={reference as ForwardedRef<HTMLDivElement>}
                     >
-                        {properties.children}
+                        {content}
                     </div> :
-                    <span ref={reference as ForwardedRef<HTMLSpanElement>}>
-                        properties.children
-                    </span>
+                    typeof content === 'string' ?
+                        <span ref={reference as ForwardedRef<HTMLSpanElement>}>
+                            {content}
+                        </span> :
+                        content
         }
     </CSSTransition>
 } as ForwardRefRenderFunction<unknown, Props>
