@@ -64,10 +64,10 @@
     "@types/webpack-env": "^1.18.5",
     "@typescript-eslint/eslint-plugin": "^7.16.1",
     "@typescript-eslint/parser": "^7.16.1",
-    "clientnode": "^3.0.1166",
+    "clientnode": "^3.0.1167",
     "css-loader": "^7.1.2",
     "cssnano": "^7.0.4",
-    "documentation-website": "^1.0.328",
+    "documentation-website": "^1.0.329",
     "eslint": "^9.7.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-jsdoc": "^48.7.0",
@@ -93,7 +93,7 @@
     "typescript-eslint": "^7.16.1",
     "typescript-plugin-css-modules": "^5.1.0",
     "web-component-wrapper": "^0.0.493",
-    "weboptimizer": "^2.0.1487",
+    "weboptimizer": "^2.0.1489",
     "webpack-dev-server": "^5.0.4"
   },
   "peerDependencies": {
