@@ -50,8 +50,8 @@ const CSS_CLASS_NAMES = cssClassNames
  * @returns React elements.
  */
 export const GenericAnimateInner = function(
-    properties:Props, reference?:ForwardedRef<HTMLDivElement|HTMLSpanElement>
-):ReactElement {
+    properties: Props, reference?: ForwardedRef<HTMLDivElement|HTMLSpanElement>
+): ReactElement {
     if (!reference)
         reference = useRef(null)
 
@@ -101,7 +101,7 @@ export const GenericAnimateInner = function(
  * @param reference - Reference object to forward internal component.
  * @returns React elements.
  */
-export const GenericAnimate:GenericAnimateComponent<
+export const GenericAnimate: GenericAnimateComponent<
     typeof GenericAnimateInner
 > = memorize(forwardRef(GenericAnimateInner)) as
     unknown as

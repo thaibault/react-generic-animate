@@ -31,5 +31,5 @@ export interface GenericAnimateComponent<Type> extends
 {
     (props:(
         GenericAnimateProps & RefAttributes<HTMLDivElement|HTMLSpanElement>
-    )):ReactElement
+    )): ReactElement
 }
