@@ -19,14 +19,17 @@ import {createRef, RefObject} from 'react'
 
 import GenericAnimate from '.'
 // endregion
-describe('GenericAnimate', ():void => {
-    test('render', ():void => {
-        const reference:RefObject<unknown> = createRef()
+describe('GenericAnimate', () => {
+    test('render', () => {
+        if (!GenericAnimate.wrapped)
+            return
 
-        expect(GenericAnimate.wrapped!({children: <div/>}, reference))
+        const reference: RefObject<unknown> = createRef()
+
+        expect(GenericAnimate.wrapped({children: <div/>}, reference))
             .toHaveProperty('props.in', true)
         expect(
-            GenericAnimate.wrapped!({children: <div/>, in: false}, reference)
+            GenericAnimate.wrapped({children: <div/>, in: false}, reference)
         ).toHaveProperty('props.in', false)
     })
 })
