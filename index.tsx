@@ -17,7 +17,8 @@
     endregion
 */
 // region imports
-import {boolean, isFunction, number, string} from 'clientnode'
+import {isFunction} from 'clientnode'
+import {boolean, number, string} from 'clientnode/property-types'
 import {
     ForwardedRef,
     ForwardRefRenderFunction,
