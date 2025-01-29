@@ -17,6 +17,7 @@ Project status
 [![npm downloads](https://img.shields.io/npm/dy/react-generic-animate.svg?style=for-the-badge)](https://www.npmjs.com/package/react-generic-animate)
 
 [![build](https://img.shields.io/github/actions/workflow/status/thaibault/react-generic-animate/build.yaml?style=for-the-badge)](https://github.com/thaibault/react-generic-animate/actions/workflows/build.yaml)
+[![build push package](https://img.shields.io/github/actions/workflow/status/thaibault/react-generic-animate/build-package-and-push.yaml?label=build%20push%20package&style=for-the-badge)](https://github.com/thaibault/react-generic-animate/actions/workflows/build-package-and-push.yaml)
 
 [![check types](https://img.shields.io/github/actions/workflow/status/thaibault/react-generic-animate/check-types.yaml?label=check%20types&style=for-the-badge)](https://github.com/thaibault/react-generic-animate/actions/workflows/check-types.yaml)
 [![lint](https://img.shields.io/github/actions/workflow/status/thaibault/react-generic-animate/lint.yaml?label=lint&style=for-the-badge)](https://github.com/thaibault/react-generic-animate/actions/workflows/lint.yaml)
