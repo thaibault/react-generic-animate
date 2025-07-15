@@ -26,7 +26,7 @@ import {GenericAnimate} from '.'
 const Application = () => {
     const [fadeState, setFadeState] = useState<boolean>(false)
 
-    useEffect(():(() => void) => timeout(
+    useEffect((): (() => void) => timeout(
         () => {
             setFadeState((value: boolean) => !value)
         },
