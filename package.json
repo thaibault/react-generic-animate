@@ -83,7 +83,7 @@
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-generic-dummy": "^0.0.104",
-    "react-generic-tools": "^0.0.77",
+    "react-generic-tools": "^0.0.78",
     "react-transition-group": "^4.4.5",
     "react-useanimations": "^2.10.0",
     "style-loader": "^4.0.0",
