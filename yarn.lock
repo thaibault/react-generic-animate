@@ -12882,7 +12882,7 @@ __metadata:
     postcss-preset-env: "npm:^11.2.0"
     react: "npm:^19.2.4"
     react-dom: "npm:^19.2.4"
-    react-generic-dummy: "npm:^0.0.119"
+    react-generic-dummy: "npm:^0.0.120"
     react-generic-tools: "npm:^0.0.102"
     react-transition-group: "npm:^4.4.5"
     react-useanimations: "npm:^2.10.0"
@@ -12928,9 +12928,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"react-generic-dummy@npm:^0.0.119":
-  version: 0.0.119
-  resolution: "react-generic-dummy@npm:0.0.119"
+"react-generic-dummy@npm:^0.0.120":
+  version: 0.0.120
+  resolution: "react-generic-dummy@npm:0.0.120"
   peerDependencies:
     "@babel/runtime": "*"
     "@types/react": "*"
@@ -12952,7 +12952,7 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: 10c0/f1092a5a019b63638b421068252d7ce4c6362baf3cbd0315155cc36835c45ecfc55ebccf8e961994b11150c0bca090ab1a9ee9eefdb294185e6ebb56aaf4c689
+  checksum: 10c0/200f8ff0ee1153830a188a614722f63e316542c1347d283a17d3d91b3ec58015b78a8abf5cd514a25797a9e171b27c5c821c5d7fa1d6ad559b66ca3b19e3d69f
   languageName: node
   linkType: hard
 
