@@ -12852,8 +12852,8 @@ __metadata:
     postcss-preset-env: "npm:^11.2.0"
     react: "npm:^19.2.4"
     react-dom: "npm:^19.2.4"
-    react-generic-dummy: "npm:^0.0.121"
-    react-generic-tools: "npm:^0.0.103"
+    react-generic-dummy: "npm:^0.0.122"
+    react-generic-tools: "npm:^0.0.104"
     react-transition-group: "npm:^4.4.5"
     react-useanimations: "npm:^2.10.0"
     style-loader: "npm:^4.0.0"
@@ -12898,9 +12898,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"react-generic-dummy@npm:^0.0.121":
-  version: 0.0.121
-  resolution: "react-generic-dummy@npm:0.0.121"
+"react-generic-dummy@npm:^0.0.122":
+  version: 0.0.122
+  resolution: "react-generic-dummy@npm:0.0.122"
   peerDependencies:
     "@babel/runtime": "*"
     "@types/react": "*"
@@ -12922,13 +12922,13 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: 10c0/ec229d44f1a9a65af02653786b8c3bd29033c9635cafaf5d6a03e14373f10781b47e41ed12f9ab217c951d23d924c65bad28f2005bc112ea2611eb7a5a3078e7
+  checksum: 10c0/3f3607180dd0f4494241797ade3be7e4235f701297ba9a3a29e30ceb7f4aaa181d01dc97d56e82b3bebb795f76b2efaea8524ef85540a7eaaca112a4b2cfe41b
   languageName: node
   linkType: hard
 
-"react-generic-tools@npm:^0.0.103":
-  version: 0.0.103
-  resolution: "react-generic-tools@npm:0.0.103"
+"react-generic-tools@npm:^0.0.104":
+  version: 0.0.104
+  resolution: "react-generic-tools@npm:0.0.104"
   peerDependencies:
     "@babel/runtime": "*"
     "@types/prop-types": "*"
@@ -12951,7 +12951,7 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: 10c0/289578a5d76ba8cfb044e28c5742ca8e0e4fd68653b8c17ee3be570a3ff760f9100289f015d40546f5377aeff18f77a38fcd15e5049b14860eb93d07bc9dc6bb
+  checksum: 10c0/3eb0e46ddbfc25ae61c0abdc9f8841f2cb8e26bb460ce327c037348d80727b1b93ff990d50afb7d68f087a059f7ea7a358c02c26c8668005274b14089baee1fa
   languageName: node
   linkType: hard
 
