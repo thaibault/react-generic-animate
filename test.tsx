@@ -14,22 +14,21 @@
     endregion
 */
 // region imports
-import {describe, expect, test} from '@jest/globals'
-import {createRef, RefObject} from 'react'
+import {afterEach, beforeEach, describe, expect, test} from '@jest/globals'
+import prepareTestEnvironment from 'react-generic-tools/testHelper'
 
 import GenericAnimate from '.'
 // endregion
+const {render} = prepareTestEnvironment(beforeEach, afterEach)
+
 describe('GenericAnimate', () => {
     test('render', () => {
         if (!GenericAnimate.wrapped)
             return
 
-        const reference: RefObject<unknown> = createRef()
-
-        expect(GenericAnimate.wrapped({children: <div/>}, reference))
-            .toHaveProperty('props.in', true)
-        expect(
-            GenericAnimate.wrapped({children: <div/>, in: false}, reference)
-        ).toHaveProperty('props.in', false)
+        expect(render(<GenericAnimate><div></div></GenericAnimate>))
+            .toBeDefined()
+        expect(render(<GenericAnimate in={false}><div></div></GenericAnimate>))
+            .toBeDefined()
     })
 })

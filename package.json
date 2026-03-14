@@ -58,7 +58,7 @@
     "@stylistic/eslint-plugin": "^5.10.0",
     "@teamsupercell/typings-for-css-modules-loader": "^2.5.2",
     "@types/jsdom": "^28.0.0",
-    "@types/node": "^25.4.0",
+    "@types/node": "^25.5.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@types/react-transition-group": "^4.4.12",
