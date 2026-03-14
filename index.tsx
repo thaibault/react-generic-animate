@@ -25,9 +25,12 @@ import {
     forwardRef,
     memo as memorize,
     ReactElement,
+    RefObject,
+    useImperativeHandle,
     useRef
 } from 'react'
 import {CSSTransition} from 'react-transition-group'
+import {ENTERING} from 'react-transition-group/Transition'
 
 /*
 "namedExport" version of css-loader:
@@ -40,7 +43,6 @@ import {
 */
 import cssClassNames from './style.module'
 import {GenericAnimateComponent, GenericAnimateProps as Props} from './type'
-import {ENTERING} from 'react-transition-group/Transition'
 // endregion
 const CSS_CLASS_NAMES = cssClassNames
 /**
@@ -50,22 +52,28 @@ const CSS_CLASS_NAMES = cssClassNames
  * @returns React elements.
  */
 export const GenericAnimateInner = function(
-    properties: Props, reference?: ForwardedRef<HTMLDivElement|HTMLSpanElement>
+    properties: Props,
+    reference?: ForwardedRef<HTMLDivElement | HTMLSpanElement>
 ): ReactElement {
-    if (!reference)
-        reference = useRef(null)
+    const nodeReference =
+        useRef<HTMLDivElement | HTMLSpanElement>(null)
 
-    const content =
-        isFunction(properties.children) ?
-            properties.children(ENTERING) :
-            properties.children
+    useImperativeHandle(
+        reference,
+        () => nodeReference.current as HTMLDivElement | HTMLSpanElement,
+        [nodeReference.current]
+    )
+
+    const content = isFunction(properties.children) ?
+        properties.children(ENTERING) :
+        properties.children
 
     return <CSSTransition
         appear
         classNames={CSS_CLASS_NAMES.genericAnimate}
         in
 
-        nodeRef={reference}
+        nodeRef={nodeReference}
 
         timeout={200}
         unmountOnExit
@@ -75,19 +83,19 @@ export const GenericAnimateInner = function(
             typeof content === 'string' ?
                 <span
                     className={CSS_CLASS_NAMES.genericAnimateWrapper}
-                    ref={reference as ForwardedRef<HTMLSpanElement>}
+                    ref={nodeReference}
                 >
                     {content}
                 </span> :
                 Array.isArray(content) ?
                     <div
                         className={CSS_CLASS_NAMES.genericAnimateListWrapper}
-                        ref={reference as ForwardedRef<HTMLDivElement>}
+                        ref={nodeReference as RefObject<HTMLDivElement>}
                     >
                         {content}
                     </div> :
                     typeof content === 'string' ?
-                        <span ref={reference as ForwardedRef<HTMLSpanElement>}>
+                        <span ref={reference as RefObject<HTMLSpanElement>}>
                             {content}
                         </span> :
                         content
