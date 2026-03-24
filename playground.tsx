@@ -24,7 +24,7 @@ import {createRoot} from 'react-dom/client'
 import {GenericAnimate} from '.'
 // endregion
 const Application = () => {
-    const [fadeState, setFadeState] = useState<boolean>(false)
+    const [fadeState, setFadeState] = useState(false)
 
     useEffect((): (() => void) => timeout(
         () => {
