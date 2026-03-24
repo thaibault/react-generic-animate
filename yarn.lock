@@ -12851,7 +12851,7 @@ __metadata:
     react: "npm:^19.2.4"
     react-dom: "npm:^19.2.4"
     react-generic-dummy: "npm:^0.0.124"
-    react-generic-tools: "npm:^0.0.109"
+    react-generic-tools: "npm:^0.0.110"
     react-transition-group: "npm:^4.4.5"
     react-useanimations: "npm:^2.10.0"
     style-loader: "npm:^4.0.0"
@@ -12924,9 +12924,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-generic-tools@npm:^0.0.109":
-  version: 0.0.109
-  resolution: "react-generic-tools@npm:0.0.109"
+"react-generic-tools@npm:^0.0.110":
+  version: 0.0.110
+  resolution: "react-generic-tools@npm:0.0.110"
   peerDependencies:
     "@babel/runtime": "*"
     "@types/prop-types": "*"
@@ -12949,7 +12949,7 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: 10c0/1dade24ba8f81dc845eb1f3b9e9b97703c6e4c38099b6624de2dc8d4bfc81ddd39bea5b5d690473c146ae12515b8568a6aee55a8c52eb6de639af7e85e395626
+  checksum: 10c0/fa55ef2529f4efb79e5f6361c24aa395c7b0ad98a2ddbd8592a6c4245cd725dd8922ad1e9fcaa8241099d3a4726363927e804a56ce2452c92d882c4941c8b9f0
   languageName: node
   linkType: hard
 
