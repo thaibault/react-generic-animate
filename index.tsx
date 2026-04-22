@@ -95,9 +95,7 @@ export const GenericAnimateInner = function(
                         {content}
                     </div> :
                     typeof content === 'string' ?
-                        <span ref={reference as RefObject<HTMLSpanElement>}>
-                            {content}
-                        </span> :
+                        <span ref={reference}>{content}</span> :
                         content
         }
     </CSSTransition>
