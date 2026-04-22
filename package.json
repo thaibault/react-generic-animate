@@ -45,7 +45,7 @@
     "test:browser": "yarn clear && weboptimizer test:browser '{__reference__: \"target:minimal\"}'",
     "test:coverage": "yarn clear && weboptimizer test:coverage",
     "test:coverage:report": "yarn clear && weboptimizer test:coverage:report '{__reference__: \"target:minimal\"}'",
-    "update:documentation": "documentation-website",
+    "update:documentation": "web-documentation",
     "watch": "weboptimizer build --watch"
   },
   "runkitExample": "require('@babel/runtime/package.json')\n\nglobalThis.window = globalThis\n\nconst {GenericAnimate} = require('react-input-material')\n\nGenericAnimate.webComponentAdapterWrapped",
@@ -68,7 +68,7 @@
     "clientnode": "^4.0.1364",
     "css-loader": "^7.1.4",
     "cssnano": "^7.1.3",
-    "documentation-website": "^1.0.401",
+    "web-documentation": "^1.0.0",
     "eslint": "^10.1.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-jsdoc": "^62.8.0",
