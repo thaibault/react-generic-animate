@@ -29,3 +29,41 @@ Use case
 --------
 
 Generic react animation component.
+
+<!--|deDE:Installation-->
+Installation
+------------
+
+You can install via package manager or simply download the compiled version as
+zip file here and inject:
+<!--deDE:
+    Sie können das Paket über den Paketmanager installieren oder einfach die
+    kompilierte Version als ZIP-Datei hier herunterladen und einbinden:
+-->
+
+```bash
+npm install react-generic-animate
+```
+
+```TypeScript
+import {GenericAnimate} from 'react-generic-animate'
+
+const Application = () => {
+    const [fadeState, setFadeState] = useState(false)
+
+    useEffect((): (() => void) => timeout(
+        () => {
+            setFadeState((value: boolean) => !value)
+        },
+        2 * 1000
+    ).clear)
+
+    return <div>
+        <GenericAnimate in={fadeState} timeout={2000}>Fade it!</GenericAnimate>
+
+        <br/>
+
+        <GenericAnimate children="Fade it!" in={!fadeState} timeout={2000}/>
+    </div>
+}
+```
