@@ -144,6 +144,10 @@
   },
   "sideEffects": false,
   "documentationWebsite": {
+    "languages": [
+      "deDE",
+      "enUS"
+    ],
     "tagline": "Generic animation component.",
     "trackingCode": "TODO"
   },

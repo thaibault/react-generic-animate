@@ -29,6 +29,9 @@ Use case
 --------
 
 Generic react animation component.
+<!--deDE:
+    Allgemeine React-Animationskomponente.
+-->
 
 <!--|deDE:Installation-->
 Installation
