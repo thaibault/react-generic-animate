@@ -144,7 +144,7 @@
   },
   "sideEffects": false,
   "documentationWebsite": {
-    "tagline": "Generic react utilities.",
+    "tagline": "Generic animation component.",
     "trackingCode": "TODO"
   },
   "webOptimizer": {
