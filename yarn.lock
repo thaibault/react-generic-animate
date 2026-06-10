@@ -7075,9 +7075,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"clientnode@npm:^4.0.1421":
-  version: 4.0.1421
-  resolution: "clientnode@npm:4.0.1421"
+"clientnode@npm:^4.0.1422":
+  version: 4.0.1422
+  resolution: "clientnode@npm:4.0.1422"
   peerDependencies:
     "@babel/runtime": "*"
     "@types/prop-types": "*"
@@ -7092,7 +7092,7 @@ __metadata:
       optional: true
     prop-types:
       optional: true
-  checksum: 10c0/85d8349c77072477fff101f541e568a3227ca290733ce35ed15df1c5f80b8ac3c201bac390535fde911423507e7aa05bfd9d59fa27c16fa2f4d41ce9df0ff163
+  checksum: 10c0/218f7acd6cf9b3c7330f5f3e585ea7e1c03d5bc483617b52fd76866326cab4a7d194b7d068c1542d6d30a12f32d809e05c5fc04499cb21a3804d93706a387b83
   languageName: node
   linkType: hard
 
@@ -13100,7 +13100,7 @@ __metadata:
     "@types/webpack-env": "npm:^1.18.8"
     "@typescript-eslint/eslint-plugin": "npm:^8.61.0"
     "@typescript-eslint/parser": "npm:^8.61.0"
-    clientnode: "npm:^4.0.1421"
+    clientnode: "npm:^4.0.1422"
     css-loader: "npm:^7.1.4"
     cssnano: "npm:^8.0.1"
     eslint: "npm:^10.4.1"
@@ -13117,8 +13117,8 @@ __metadata:
     postcss-preset-env: "npm:^11.3.0"
     react: "npm:^19.2.7"
     react-dom: "npm:^19.2.7"
-    react-generic-dummy: "npm:^0.0.129"
-    react-generic-tools: "npm:^0.0.118"
+    react-generic-dummy: "npm:^0.0.130"
+    react-generic-tools: "npm:^0.0.120"
     react-transition-group: "npm:^4.4.5"
     react-useanimations: "npm:^2.10.0"
     style-loader: "npm:^4.0.0"
@@ -13127,8 +13127,8 @@ __metadata:
     tslib: "npm:^2.8.1"
     typescript-eslint: "npm:^8.61.0"
     typescript-plugin-css-modules: "npm:^5.2.0"
-    web-component-wrapper: "npm:^0.0.595"
-    web-documentation: "npm:^1.0.31"
+    web-component-wrapper: "npm:^0.0.596"
+    web-documentation: "npm:^1.0.34"
     weboptimizer: "npm:^3.0.24"
     webpack-dev-server: "npm:^5.2.4"
   peerDependencies:
@@ -13164,9 +13164,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"react-generic-dummy@npm:^0.0.129":
-  version: 0.0.129
-  resolution: "react-generic-dummy@npm:0.0.129"
+"react-generic-dummy@npm:^0.0.130":
+  version: 0.0.130
+  resolution: "react-generic-dummy@npm:0.0.130"
   peerDependencies:
     "@babel/runtime": "*"
     "@types/react": "*"
@@ -13188,13 +13188,13 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: 10c0/38c1f4bd645ea87caa5206d8cdf25511d86ec7891fb7a63188a9a7cfe3c8cc12f6e7a8e288334e0a3d55d92df189bfb12240121eacd41566c18dbb5c720287d4
+  checksum: 10c0/a6422860801dc5a72ff0c538e13773c24a576d7a456e2b2e81b208b4a71bfec15d57cce58f0e2833ed5455548b31888fc6bf089a29d13e3190b167bf413bd2aa
   languageName: node
   linkType: hard
 
-"react-generic-tools@npm:^0.0.118":
-  version: 0.0.118
-  resolution: "react-generic-tools@npm:0.0.118"
+"react-generic-tools@npm:^0.0.120":
+  version: 0.0.120
+  resolution: "react-generic-tools@npm:0.0.120"
   peerDependencies:
     "@babel/runtime": "*"
     "@types/prop-types": "*"
@@ -13217,7 +13217,7 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: 10c0/925dc2cc0346f4aefd2a1d0053740aac894951788b8dd0cd7b3002881b917244c581c22f4ece814b58dfef91d7e2ffcb208192bdf0fb30b669ea75ac5266ae1e
+  checksum: 10c0/eafc6092b9d0b587b098661f37f5e46becccd96b600da48efa6a72dec1a65586402ea3a35991c130f014ebb2d0c79b6994edf431e4b5c7e3e12ea3f001fafa19
   languageName: node
   linkType: hard
 
@@ -15408,9 +15408,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"web-component-wrapper@npm:^0.0.595":
-  version: 0.0.595
-  resolution: "web-component-wrapper@npm:0.0.595"
+"web-component-wrapper@npm:^0.0.596":
+  version: 0.0.596
+  resolution: "web-component-wrapper@npm:0.0.596"
   peerDependencies:
     "@babel/runtime": "*"
     "@types/react": "*"
@@ -15429,16 +15429,16 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: 10c0/bfc3a3db5d432c69a10a202213d5966ed96a29fd130299f0cab5091f2f9f11f4ad19e55bff86554ef26aa75589dd1177ab83053ec76389d04228b768b62fcd12
+  checksum: 10c0/23ea79ff06362af4fd5de4b4bb2eee04d3a59b14ddc5714753d93bf6683942c98a254f29bcc1e10efdc9677e0c4676b87b6a79da4dffc16a746e88b64112746e
   languageName: node
   linkType: hard
 
-"web-documentation@npm:^1.0.31":
-  version: 1.0.31
-  resolution: "web-documentation@npm:1.0.31"
+"web-documentation@npm:^1.0.34":
+  version: 1.0.34
+  resolution: "web-documentation@npm:1.0.34"
   bin:
     web-documentation: build/deploy.js
-  checksum: 10c0/e2e02ce519b864f719e007358699c2e4137007478198473dca4c5c1fe2a06a65cb832edc0c9573a51a174e8ae67faf9108934b8e9d67c7276beb5ab0c1b5550f
+  checksum: 10c0/348ca467b53fcd733945cdf97e9a15547e9fd51033ceb9ad8506f96020e694065cb9090acc31308a5f2aac4b52eabd166a450b40acff66353f45fa455fddc060
   languageName: node
   linkType: hard
 
