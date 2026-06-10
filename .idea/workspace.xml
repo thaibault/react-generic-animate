@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ecf55286-5d30-4d2d-a289-cecfc93b620b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/playground.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/playground.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_/Users/torben.sickert/local/public/project/repository/react-generic-animate" value="3Ewm5xNkhiUJWvs6WeAu1w7f0lV" />
+    </persistenceIdMap>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.456851612940187" />
+      <entry key="MS500" value="2.2932522267544626" />
+      <entry key="S2" value="3.1694012672116614" />
+      <entry key="S5" value="3.6259009843392827" />
+      <entry key="S10" value="3.9723818620473925" />
+      <entry key="S30" value="5.1858665505654375" />
+      <entry key="S60" value="6.976561986301972" />
+      <entry key="M2" value="9.639658797829833" />
+      <entry key="M5" value="13.068052656138363" />
+      <entry key="M10" value="14.809302646291101" />
+      <entry key="M15" value="15.48374041252709" />
+      <entry key="M30" value="16.212335583573243" />
+      <entry key="H1" value="16.5984591490418" />
+      <entry key="H2" value="16.797260131589873" />
+      <entry key="H4" value="16.898132312347496" />
+      <entry key="D1" value="16.982952456832006" />
+      <entry key="W1" value="16.997562926247923" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9307863643469394" />
+      <entry key="MS500" value="1.7235170048083868" />
+      <entry key="S2" value="2.895440129438561" />
+      <entry key="S5" value="3.4882255075062307" />
+      <entry key="S10" value="3.8915093396053764" />
+      <entry key="S30" value="5.137181988503798" />
+      <entry key="S60" value="6.935600326160099" />
+      <entry key="M2" value="9.6091122108781" />
+      <entry key="M5" value="13.051548967845994" />
+      <entry key="M10" value="14.80007471091045" />
+      <entry key="M15" value="15.47734617487548" />
+      <entry key="M30" value="16.20901024932567" />
+      <entry key="H1" value="16.596763025618266" />
+      <entry key="H2" value="16.796403523512897" />
+      <entry key="H4" value="16.897701848479446" />
+      <entry key="D1" value="16.98288041088389" />
+      <entry key="W1" value="16.997552626548288" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3Ewm5xNkhiUJWvs6WeAu1w7f0lV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/Users/torben.sickert/local/public/project/repository/react-generic-animate",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.stylelint": "",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "/Users/torben.sickert/local/public/project/repository/react-generic-animate/node_modules/typescript/lib"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-WS-261.25134.101" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ecf55286-5d30-4d2d-a289-cecfc93b620b" name="Changes" comment="" />
+      <created>1781097826757</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1781097826757</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
