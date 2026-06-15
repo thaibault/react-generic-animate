@@ -33,13 +33,13 @@ const Application = () => {
         2 * 1000
     ).clear)
 
-    return (<div>
+    return <div>
         <GenericAnimate in={fadeState} timeout={2000}>Fade it!</GenericAnimate>
 
         <br/>
 
         <GenericAnimate children="Fade it!" in={!fadeState} timeout={2000}/>
-    </div>)
+    </div>
 }
 
 window.onload = () => {
