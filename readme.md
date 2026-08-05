@@ -66,7 +66,7 @@ const Application = () => {
 
         <br/>
 
-        <GenericAnimate children="Fade it!" in={!fadeState} timeout={2000}/>
+        <GenericAnimate children="Fade it!" in={!fadeState} timeout={2000} />
     </div>
 }
 ```
