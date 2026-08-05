@@ -16,9 +16,11 @@
     endregion
 */
 // region imports
-import {ForwardRefExoticComponent, ReactElement, RefAttributes} from 'react'
-import {TransitionProps} from 'react-transition-group/Transition'
-import {
+import type {
+    ForwardRefExoticComponent, ReactElement, RefAttributes
+} from 'react'
+import type {TransitionProps} from 'react-transition-group/Transition'
+import type {
     StaticWebComponent as StaticBaseWebComponent
 } from 'web-component-wrapper/type'
 // endregion

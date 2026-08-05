@@ -17,18 +17,17 @@
     endregion
 */
 // region imports
+import type {
+    ForwardedRef, ForwardRefRenderFunction, ReactElement, RefObject
+} from 'react'
+
+import type {
+    GenericAnimateComponent, GenericAnimateProps as Props
+} from './type'
+
 import {isFunction} from 'clientnode'
 import {boolean, number, string} from 'clientnode/property-types'
-import {
-    ForwardedRef,
-    ForwardRefRenderFunction,
-    forwardRef,
-    memo as memorize,
-    ReactElement,
-    RefObject,
-    useImperativeHandle,
-    useRef
-} from 'react'
+import {forwardRef, memo as memorize, useImperativeHandle, useRef} from 'react'
 import {CSSTransition} from 'react-transition-group'
 import {ENTERING} from 'react-transition-group/Transition'
 
@@ -42,7 +41,6 @@ import {
 } from './style.module'
 */
 import cssClassNames from './style.module'
-import {GenericAnimateComponent, GenericAnimateProps as Props} from './type'
 // endregion
 const CSS_CLASS_NAMES = cssClassNames
 /**
