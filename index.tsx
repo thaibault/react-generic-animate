@@ -38,9 +38,9 @@ import {
     genericAnimate: genericAnimateClassName,
     genericAnimateListWrapper: genericAnimateListWrapperClassName,
     genericAnimateWrapper: genericAnimateWrapperClassName
-} from './style.module'
+} from './style.module.css'
 */
-import cssClassNames from './style.module'
+import cssClassNames from './style.module.css'
 // endregion
 const CSS_CLASS_NAMES = cssClassNames
 /**
