@@ -29,7 +29,6 @@ import {isFunction} from 'clientnode'
 import {boolean, number, string} from 'clientnode/property-types'
 import {forwardRef, memo as memorize, useImperativeHandle, useRef} from 'react'
 import {CSSTransition} from 'react-transition-group'
-import {ENTERING} from 'react-transition-group/Transition'
 
 /*
 "namedExport" version of css-loader:
@@ -63,7 +62,7 @@ export const GenericAnimateInner = function(
     )
 
     const content = isFunction(properties.children) ?
-        properties.children(ENTERING) :
+        properties.children('entering') :
         properties.children
 
     return <CSSTransition
