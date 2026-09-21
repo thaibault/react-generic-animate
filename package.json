@@ -7,16 +7,16 @@
     "react",
     "animation"
   ],
-  "homepage": "https://torben.website/react-generic-animate",
+  "homepage": "https://tsickert.com/react-generic-animate",
   "bugs": {
-    "email": "info@torben.website",
+    "email": "info@tsickert.com",
     "url": "https://github.com/thaibault/react-generic-animate/issues"
   },
   "license": "CC-BY-3.0",
   "author": {
-    "email": "info@torben.website",
+    "email": "info@tsickert.com",
     "name": "Torben Sickert",
-    "url": "https://torben.website"
+    "url": "https://tsickert.com"
   },
   "repository": {
     "type": "git",
@@ -65,7 +65,7 @@
     "@types/webpack-env": "^1.18.8",
     "@typescript-eslint/eslint-plugin": "^8.70.0",
     "@typescript-eslint/parser": "^8.70.0",
-    "clientnode": "^4.0.1518",
+    "clientnode": "^4.0.1521",
     "css-loader": "^7.1.5",
     "cssnano": "^9.0.4",
     "eslint": "^10.10.0",
