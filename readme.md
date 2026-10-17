@@ -1,7 +1,7 @@
 <!-- !/usr/bin/env markdown
 -*- coding: utf-8 -*-
 region header
-Copyright Torben Sickert (info["~at~"]torben.website) 16.12.2012
+Copyright Torben Sickert (info["~at~"]tsickert.com) 16.12.2012
 
 License
 -------
@@ -10,7 +10,8 @@ This library written by Torben Sickert stands under a creative commons naming
 3.0 unported license. See https://creativecommons.org/licenses/by/3.0/deed.de
 endregion -->
 
-Project status
+<!--|deDE:Projektstatus-->
+Project Status
 --------------
 
 [![npm](https://img.shields.io/npm/v/react-generic-animate?color=%23d55e5d&label=npm%20package%20version&logoColor=%23d55e5d&style=for-the-badge)](https://www.npmjs.com/package/react-generic-animate)
@@ -23,8 +24,9 @@ Project status
 [![lint](https://img.shields.io/github/actions/workflow/status/thaibault/react-generic-animate/lint.yaml?label=lint&style=for-the-badge)](https://github.com/thaibault/react-generic-animate/actions/workflows/lint.yaml)
 
 [![deploy web documentation](https://img.shields.io/github/actions/workflow/status/thaibault/react-generic-animate/deploy-web-documentation.yaml?label=deploy%20web%20documentation&style=for-the-badge)](https://github.com/thaibault/react-generic-animate/actions/workflows/deploy-web-documentation.yaml)
-[![web documentation](https://img.shields.io/website-up-down-green-red/https/torben.website/react-generic-animate.svg?label=web-documentation&style=for-the-badge)](https://torben.website/react-generic-animate)
+[![web documentation](https://img.shields.io/website-up-down-green-red/https/tsickert.com/react-generic-animate.svg?label=web-documentation&style=for-the-badge)](https://tsickert.com/react-generic-animate)
 
+<!--|deDE:Verwendung-->
 Use case
 --------
 
@@ -33,7 +35,11 @@ Generic react animation component.
     Allgemeine React-Animationskomponente.
 -->
 
-<!--|deDE:Installation-->
+<div class="wd-table-of-contents">
+    <h2 id="content">Content<!--deDE:Inhalt--><!--frFR:Contenu--></h2>
+    <!--wd-table-of-contents-->
+</div>
+
 Installation
 ------------
 
@@ -47,6 +53,11 @@ zip file here and inject:
 ```bash
 npm install react-generic-animate
 ```
+
+<!--|deDE:Beispiel-->
+<!--|frFR:Exemple-->
+Example
+-------
 
 ```TypeScript
 import {GenericAnimate} from 'react-generic-animate'
