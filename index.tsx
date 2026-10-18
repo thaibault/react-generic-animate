@@ -91,9 +91,10 @@ export const GenericAnimateInner = function(
                     >
                         {content}
                     </div> :
-                    typeof content === 'string' ?
-                        <span ref={reference}>{content}</span> :
-                        content
+                    <span
+                        className={CSS_CLASS_NAMES.genericAnimateWrapper}
+                        ref={nodeReference}
+                    >{content}</span>
         }
     </CSSTransition>
 } as ForwardRefRenderFunction<unknown, Props>
