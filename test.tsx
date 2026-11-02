@@ -15,6 +15,7 @@
 */
 // region imports
 import {afterEach, beforeEach, describe, expect, test} from '@jest/globals'
+import {createRef} from 'react'
 import prepareTestEnvironment from 'react-generic-tools/testHelper'
 
 import GenericAnimate from '.'
@@ -23,12 +24,56 @@ const {render} = prepareTestEnvironment(beforeEach, afterEach)
 
 describe('GenericAnimate', () => {
     test('render', () => {
-        if (!GenericAnimate.wrapped)
-            return
-
         expect(render(<GenericAnimate><div></div></GenericAnimate>))
             .toBeDefined()
-        expect(render(<GenericAnimate in={false}><div></div></GenericAnimate>))
-            .toBeDefined()
+    })
+    test('render hidden', () => {
+        expect(render(<GenericAnimate in={false}><div></div></GenericAnimate>)
+            ?.childNodes).toHaveLength(0)
+    })
+    test('exit on re-render', () => {
+        render(<GenericAnimate><div></div></GenericAnimate>)
+        const node = render<HTMLSpanElement>(
+            <GenericAnimate in={false}><div></div></GenericAnimate>
+        )
+
+        expect(node?.classList.contains('generic-animate-exit-active'))
+            .toStrictEqual(true)
+    })
+    test('render string content', () => {
+        const node = render(<GenericAnimate>text</GenericAnimate>)
+
+        expect(node?.tagName).toStrictEqual('SPAN')
+        expect(node?.textContent).toStrictEqual('text')
+    })
+    test('render list content', () => {
+        const node = render(<GenericAnimate>
+            {[<span key="a">a</span>, <span key="b">b</span>]}
+        </GenericAnimate>)
+
+        expect(node?.tagName).toStrictEqual('DIV')
+        expect(node?.childNodes).toHaveLength(2)
+    })
+    test('render element content', () => {
+        const node = render(<GenericAnimate><b>bold</b></GenericAnimate>)
+
+        expect(node?.tagName).toStrictEqual('SPAN')
+        expect(node?.firstElementChild?.tagName).toStrictEqual('B')
+    })
+    test('render function content', () => {
+        const node = render(<GenericAnimate>
+            {(state: string) => state}
+        </GenericAnimate>)
+
+        expect(node?.textContent).toStrictEqual('entering')
+    })
+    test('forward reference', () => {
+        const reference = createRef<HTMLDivElement | HTMLSpanElement>()
+
+        const node = render(<GenericAnimate ref={reference}>
+            text
+        </GenericAnimate>)
+
+        expect(reference.current).toStrictEqual(node)
     })
 })
