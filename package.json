@@ -1,6 +1,6 @@
 {
   "name": "react-generic-animate",
-  "version": "0.0.138",
+  "version": "0.0.138-1",
   "description": "Generic animation component.",
   "keywords": [
     "generic",
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/thaibault/react-generic-animate"
+    "url": "git+https://github.com/thaibault/react-generic-animate.git"
   },
   "type": "module",
   "main": "index.js",
