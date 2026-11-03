@@ -23,12 +23,12 @@
     "url": "git+https://github.com/thaibault/react-generic-animate.git"
   },
   "type": "module",
-  "main": "index.js",
+  "main": "dist/index.js",
   "files": [
-    "index.d.ts",
-    "index.compiled.css",
-    "style.module.css",
-    "type.d.ts"
+    "dist/index.css",
+    "dist/index.d.ts",
+    "dist/type.d.ts",
+    "src/style.module.css"
   ],
   "sideEffects": false,
   "scripts": {
@@ -65,7 +65,7 @@
     "@types/webpack-env": "^1.18.8",
     "@typescript-eslint/eslint-plugin": "^8.72.1",
     "@typescript-eslint/parser": "^8.72.1",
-    "clientnode": "^4.0.1529",
+    "clientnode": "^4.0.1530",
     "css-loader": "^7.1.5",
     "cssnano": "^9.9.0",
     "eslint": "^10.14.0",
@@ -92,8 +92,8 @@
     "typescript-eslint": "^8.72.1",
     "typescript-plugin-css-modules": "^5.3.0",
     "web-component-wrapper": "^0.0.620",
-    "web-documentation": "^1.0.68",
-    "weboptimizer": "^4.0.99",
+    "web-documentation": "^1.0.71",
+    "weboptimizer": "^4.0.102",
     "webpack-dev-server": "^6.1.0"
   },
   "peerDependencies": {
@@ -207,6 +207,14 @@
             }
           }
         }
+      }
+    },
+    "path": {
+      "source": {
+        "base": "src/"
+      },
+      "target": {
+        "base": "dist/"
       }
     }
   },
