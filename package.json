@@ -39,14 +39,14 @@
     "check:types": "weboptimizer check:types",
     "clear": "weboptimizer clear",
     "document": "weboptimizer document",
-    "lint": "yarn clear && weboptimizer lint",
+    "lint": "weboptimizer lint",
     "prepare": "yarn build",
     "serve": "weboptimizer serve",
     "start": "yarn serve",
-    "test": "yarn clear && weboptimizer test '{__reference__: \"target:minimal\"}'",
-    "test:browser": "yarn clear && weboptimizer test:browser '{__reference__: \"target:minimal\"}'",
-    "test:coverage": "yarn clear && weboptimizer test:coverage",
-    "test:coverage:report": "yarn clear && weboptimizer test:coverage:report '{__reference__: \"target:minimal\"}'",
+    "test": "weboptimizer test '{__reference__: \"target:minimal\"}'",
+    "test:browser": "weboptimizer test:browser '{__reference__: \"target:minimal\"}'",
+    "test:coverage": "weboptimizer test:coverage",
+    "test:coverage:report": "weboptimizer test:coverage:report '{__reference__: \"target:minimal\"}'",
     "update:documentation": "web-documentation",
     "watch": "weboptimizer build --watch"
   },
@@ -93,7 +93,7 @@
     "typescript-plugin-css-modules": "^5.3.0",
     "web-component-wrapper": "^0.0.620",
     "web-documentation": "^1.0.72",
-    "weboptimizer": "^4.0.102",
+    "weboptimizer": "^4.0.103",
     "webpack-dev-server": "^6.1.0"
   },
   "peerDependencies": {
