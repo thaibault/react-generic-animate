@@ -14,7 +14,7 @@ endregion */
 .generic-animate__wrapper {
     /*
         Dummy value to avoid removing this class name during static
-        optimisation.
+        optimization.
     */
     visibility: visible;
 }
