@@ -3,7 +3,7 @@
 'use strict'
 /* !
     region header
-    [Project page](https://tsickert.com/react-material-input)
+    [Project page](https://tsickert.com/react-generic-animate)
 
     Copyright Torben Sickert (info["~at~"]tsickert.com) 16.12.2012
 
