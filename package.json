@@ -95,7 +95,7 @@
     "typescript-plugin-css-modules": "^5.3.0",
     "web-component-wrapper": "^0.0.624",
     "web-documentation": "^1.0.74",
-    "weboptimizer": "^4.0.118",
+    "weboptimizer": "^4.0.119",
     "webpack-dev-server": "^6.1.0"
   },
   "peerDependencies": {
