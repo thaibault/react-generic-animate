@@ -1,8 +1,20 @@
-if(typeof window==='undefined'||window===null)var window=(typeof globalThis==='undefined'||globalThis===null)?{}:globalThis;import { isFunction as __WEBPACK_EXTERNAL_MODULE_clientnode_isFunction__ } from "clientnode";
+if(typeof window==='undefined'||window===null)var window=(typeof globalThis==='undefined'||globalThis===null)?{}:globalThis;import "core-js/modules/es.array.push.js";
+import "core-js/modules/es.iterator.constructor.js";
+import "core-js/modules/es.iterator.filter.js";
+import "core-js/modules/es.iterator.for-each.js";
+import { isFunction as __WEBPACK_EXTERNAL_MODULE_clientnode_isFunction__ } from "clientnode";
 import { boolean as __WEBPACK_EXTERNAL_MODULE_clientnode_property_types_4789ebe2_boolean__, number as __WEBPACK_EXTERNAL_MODULE_clientnode_property_types_4789ebe2_number__, string as __WEBPACK_EXTERNAL_MODULE_clientnode_property_types_4789ebe2_string__ } from "clientnode/property-types";
 import { forwardRef as __WEBPACK_EXTERNAL_MODULE_react_forwardRef__, memo as __WEBPACK_EXTERNAL_MODULE_react_memo__, useImperativeHandle as __WEBPACK_EXTERNAL_MODULE_react_useImperativeHandle__, useRef as __WEBPACK_EXTERNAL_MODULE_react_useRef__ } from "react";
 import { CSSTransition as __WEBPACK_EXTERNAL_MODULE_react_transition_group_31188194_CSSTransition__ } from "react-transition-group";
 import { jsx as __WEBPACK_EXTERNAL_MODULE_react_jsx_runtime_00f484c1_jsx__ } from "react/jsx-runtime";
+
+;// external "core-js/modules/es.array.push.js"
+
+;// external "core-js/modules/es.iterator.constructor.js"
+
+;// external "core-js/modules/es.iterator.filter.js"
+
+;// external "core-js/modules/es.iterator.for-each.js"
 
 ;// external "clientnode"
 
@@ -22,7 +34,7 @@ import { jsx as __WEBPACK_EXTERNAL_MODULE_react_jsx_runtime_00f484c1_jsx__ } fro
 // -*- coding: utf-8 -*-
 /** @module GenericAnimate *//* !
     region header
-    [Project page](https://tsickert.com/react-material-input)
+    [Project page](https://tsickert.com/react-generic-animate)
 
     Copyright Torben Sickert (info["~at~"]tsickert.com) 16.12.2012
 
@@ -30,8 +42,8 @@ import { jsx as __WEBPACK_EXTERNAL_MODULE_react_jsx_runtime_00f484c1_jsx__ } fro
     -------
 
     This library written by Torben Sickert stands under a creative commons
-    naming 3.0 unported license.
-    See https://creativecommons.org/licenses/by/3.0/deed.de
+    naming 4.0 international license.
+    See https://creativecommons.org/licenses/by/4.0/deed.de
     endregion
 */// region imports
 function _typeof(o){"@babel/helpers - typeof";return _typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(o){return typeof o}:function(o){return o&&"function"==typeof Symbol&&o.constructor===Symbol&&o!==Symbol.prototype?"symbol":typeof o},_typeof(o)}function ownKeys(e,r){var t=Object.keys(e);if(Object.getOwnPropertySymbols){var o=Object.getOwnPropertySymbols(e);r&&(o=o.filter(function(r){return Object.getOwnPropertyDescriptor(e,r).enumerable})),t.push.apply(t,o)}return t}function _objectSpread(r){for(var t=1;t<arguments.length;t++){var o=null!=arguments[t]?arguments[t]:{};t%2?ownKeys(Object(o),!0).forEach(function(t){_defineProperty(r,t,o[t])}):Object.getOwnPropertyDescriptors?Object.defineProperties(r,Object.getOwnPropertyDescriptors(o)):ownKeys(Object(o)).forEach(function(e){Object.defineProperty(r,e,Object.getOwnPropertyDescriptor(o,e))})}return r}function _defineProperty(r,t,o){return(t=_toPropertyKey(t))in r?Object.defineProperty(r,t,{value:o,enumerable:!0,configurable:!0,writable:!0}):r[t]=o,r}function _toPropertyKey(r){var o=_toPrimitive(r,"string");return"symbol"==_typeof(o)?o:o+""}function _toPrimitive(t,e){if("object"!=_typeof(t)||!t)return t;var r;if("undefined"!=typeof Symbol&&void 0!==(r=t[Symbol.toPrimitive])){var i=r.call(t,e||"default");if("object"!=_typeof(i))return i;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===e?String:Number)(t)};/*
