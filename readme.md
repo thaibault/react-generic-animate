@@ -100,7 +100,7 @@ module:
 -->
 
 ```CSS
-@import "react-generic-animate/dist/index.css";
+@import "react-generic-animate/index.css";
 ```
 
 <!--|deDE:Beispiel-->
