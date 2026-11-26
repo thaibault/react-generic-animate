@@ -104,7 +104,7 @@
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "react-generic-dummy": "^0.0.143",
-    "react-generic-tools": "^0.0.141",
+    "react-generic-tools": "^0.0.142",
     "react-transition-group": "^4.4.5",
     "style-loader": "^4.0.0",
     "stylelint": "^18.1.0",

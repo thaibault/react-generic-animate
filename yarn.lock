@@ -11933,7 +11933,7 @@ __metadata:
     react: "npm:^19.3.1"
     react-dom: "npm:^19.3.1"
     react-generic-dummy: "npm:^0.0.143"
-    react-generic-tools: "npm:^0.0.141"
+    react-generic-tools: "npm:^0.0.142"
     react-transition-group: "npm:^4.4.5"
     style-loader: "npm:^4.0.0"
     stylelint: "npm:^18.1.0"
@@ -12005,9 +12005,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-generic-tools@npm:^0.0.141":
-  version: 0.0.141
-  resolution: "react-generic-tools@npm:0.0.141"
+"react-generic-tools@npm:^0.0.142":
+  version: 0.0.142
+  resolution: "react-generic-tools@npm:0.0.142"
   peerDependencies:
     "@babel/preset-react": "*"
     "@types/react": "*"
@@ -12030,7 +12030,7 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: 10c0/2c0b22dd995cc9a4a27b7815c6a73bf412d122e5c993056e30f39a8400c838d6b2ceb09686d9bb32ffaf0fdbd9cfb5294edd573a91f17686d0fa8a03f79f8063
+  checksum: 10c0/764c663df22dcf2d52bbd4ef10634823c7ce411d8289b0b0df6a9e4698397e5cb7f676863f78eaa2b9d3027af89d3d34206c1ecf240560ee2a4f6f06fc380da9
   languageName: node
   linkType: hard
 
