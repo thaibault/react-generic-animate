@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Home</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Home</h1>
+
+    
+
+
+
+    
+
+
+    <h3>react-generic-animate 0.0.145</h3>
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    <section>
+        <article><!-- !/usr/bin/env markdown
+-*- coding: utf-8 -*-
+region header
+Copyright Torben Sickert (info["~at~"]tsickert.com) 16.12.2012
+
+License
+-------
+
+This library written by Torben Sickert stands under a creative commons naming
+4.0 international license.
+See https://creativecommons.org/licenses/by/4.0/deed.de
+endregion -->
+<!--|deDE:Projektstatus-->
+<!--|frFR:Statut du projet-->
+<h2>Project Status</h2>
+<p><a href="https://www.npmjs.com/package/react-generic-animate"><img src="https://img.shields.io/npm/v/react-generic-animate?color=%23d55e5d&amp;label=npm%20package%20version&amp;logoColor=%23d55e5d&amp;style=for-the-badge" alt="npm"></a>
+<a href="https://www.npmjs.com/package/react-generic-animate"><img src="https://img.shields.io/npm/dy/react-generic-animate.svg?style=for-the-badge" alt="npm downloads"></a></p>
+<p><a href="https://github.com/thaibault/react-generic-animate/actions/workflows/build.yaml"><img src="https://img.shields.io/github/actions/workflow/status/thaibault/react-generic-animate/build.yaml?style=for-the-badge" alt="build"></a>
+<a href="https://github.com/thaibault/react-generic-animate/actions/workflows/build-package-and-push.yaml"><img src="https://img.shields.io/github/actions/workflow/status/thaibault/react-generic-animate/build-package-and-push.yaml?label=build%20push%20package&amp;style=for-the-badge" alt="build push package"></a></p>
+<p><a href="https://github.com/thaibault/react-generic-animate/actions/workflows/check-types.yaml"><img src="https://img.shields.io/github/actions/workflow/status/thaibault/react-generic-animate/check-types.yaml?label=check%20types&amp;style=for-the-badge" alt="check types"></a>
+<a href="https://github.com/thaibault/react-generic-animate/actions/workflows/lint.yaml"><img src="https://img.shields.io/github/actions/workflow/status/thaibault/react-generic-animate/lint.yaml?label=lint&amp;style=for-the-badge" alt="lint"></a>
+<a href="https://github.com/thaibault/react-generic-animate/actions/workflows/test-coverage-report.yaml"><img src="https://img.shields.io/github/actions/workflow/status/thaibault/react-generic-animate/test-coverage-report.yaml?label=test&amp;style=for-the-badge" alt="test"></a></p>
+<p><a href="https://coveralls.io/github/thaibault/react-generic-animate"><img src="https://img.shields.io/coverallsCoverage/github/thaibault/react-generic-animate?label=code%20coverage&amp;style=for-the-badge" alt="code coverage"></a></p>
+<p><a href="https://github.com/thaibault/react-generic-animate/actions/workflows/deploy-web-documentation.yaml"><img src="https://img.shields.io/github/actions/workflow/status/thaibault/react-generic-animate/deploy-web-documentation.yaml?label=deploy%20web%20documentation&amp;style=for-the-badge" alt="deploy web documentation"></a>
+<a href="https://tsickert.com/react-generic-animate"><img src="https://img.shields.io/website-up-down-green-red/https/tsickert.com/react-generic-animate.svg?label=web-documentation&amp;style=for-the-badge" alt="web documentation"></a></p>
+<!--|deDE:Einsatzmöglichkeiten-->
+<!--|frFR:Cas d'utilisation-->
+<h2>Use case</h2>
+<p>A React component which fades its content in when it appears and out before
+it disappears. Wrap anything that is shown conditionally, like hints, error
+messages or list entries, and it no longer pops in and out abruptly. It is a
+thin, preconfigured layer on top of &quot;CSSTransition&quot; from
+<a href="https://reactcommunity.org/react-transition-group">react-transition-group</a>.</p>
+<!--deDE:
+    Eine React-Komponente, die ihren Inhalt beim Erscheinen ein- und vor dem
+    Verschwinden ausblendet. Umschließen Sie alles, was bedingt angezeigt
+    wird, etwa Hinweise, Fehlermeldungen oder Listeneinträge, und es taucht
+    nicht mehr abrupt auf und verschwindet. Sie ist eine dünne,
+    vorkonfigurierte Schicht über "CSSTransition" aus
+    [react-transition-group](https://reactcommunity.org/react-transition-group).
+-->
+<!--frFR:
+    Un composant React qui fait apparaître son contenu en fondu et le fait
+    disparaître en fondu avant qu'il ne soit retiré. Enveloppez tout ce qui
+    est affiché de manière conditionnelle, comme des indications, des messages
+    d'erreur ou des entrées de liste, et rien n'apparaît ni ne disparaît plus
+    brusquement. Il s'agit d'une fine couche préconfigurée au-dessus de
+    "CSSTransition" de
+    [react-transition-group](https://reactcommunity.org/react-transition-group).
+-->
+<p>Features included:</p>
+<!--deDE:Enthaltene Funktionen:-->
+<!--frFR:Fonctionnalités incluses:-->
+<ul>
+<li>Fade animation of 200 milliseconds on mount, on &quot;in&quot; changes and before
+unmount.<!--deDE:Überblendung von 200 Millisekunden beim Einhängen, bei Änderungen von "in" und vor dem Aushängen.--><!--frFR:Fondu de 200 millisecondes au montage, lors des changements de "in" et avant le démontage.--></li>
+<li>Removes the content from the DOM once it is faded out.<!--deDE:Entfernt den Inhalt aus dem DOM, sobald er ausgeblendet ist.--><!--frFR:Retire le contenu du DOM une fois le fondu terminé.--></li>
+<li>Wraps text and single elements in a &quot;span&quot; and lists in a &quot;div&quot;.<!--deDE:Umschließt Text und einzelne Elemente mit einem "span" und Listen mit einem "div".--><!--frFR:Enveloppe le texte et les éléments uniques dans un "span" et les listes dans un "div".--></li>
+<li>Accepts all &quot;CSSTransition&quot; properties, e.g. for own animations.<!--deDE:Akzeptiert alle Eigenschaften von "CSSTransition", z. B. für eigene Animationen.--><!--frFR:Accepte toutes les propriétés de "CSSTransition", par exemple pour vos propres animations.--></li>
+</ul>
+<div class="wd-table-of-contents">
+    <h2 id="content">Content<!--deDE:Inhalt--><!--frFR:Contenu--></h2>
+    <!--wd-table-of-contents-->
+</div>
+<h2>Installation</h2>
+<p>Install the package together with its peer dependencies:</p>
+<!--deDE:Installieren Sie das Paket zusammen mit seinen Peer-Abhängigkeiten:-->
+<!--frFR:Installez le paquet avec ses dépendances pairs:-->
+<pre class="prettyprint source lang-bash"><code>npm install \
+    react-generic-animate \
+    clientnode core-js prop-types react react-dom react-transition-group
+</code></pre>
+<p>Include the stylesheet once, either in your CSS or in your JavaScript entry
+module:</p>
+<!--deDE:
+    Binden Sie das Stylesheet einmal ein, entweder in Ihrem CSS oder in Ihrem
+    JavaScript-Einstiegsmodul:
+-->
+<!--frFR:
+    Intégrez la feuille de style une fois, soit dans votre CSS, soit dans
+    votre module d'entrée JavaScript:
+-->
+<pre class="prettyprint source lang-CSS"><code>@import &quot;react-generic-animate/index.css&quot;;
+</code></pre>
+<!--|deDE:Beispiel-->
+<!--|frFR:Exemple-->
+<h2>Example</h2>
+<p>Two texts which take turns every two seconds:</p>
+<!--deDE:Zwei Texte, die sich alle zwei Sekunden abwechseln:-->
+<!--frFR:Deux textes qui alternent toutes les deux secondes:-->
+<pre class="prettyprint source lang-TypeScript"><code>import {useEffect, useState} from 'react'
+import GenericAnimate from 'react-generic-animate'
+
+export const Application = () => {
+    const [visible, setVisible] = useState(false)
+
+    useEffect(() => {
+        const interval = setInterval(
+            () => {
+                setVisible((value) => !value)
+            },
+            2000
+        )
+
+        return () => {
+            clearInterval(interval)
+        }
+    }, [])
+
+    return &lt;>
+        &lt;GenericAnimate in={visible}>Now you see me.&lt;/GenericAnimate>
+        &lt;GenericAnimate in={!visible}>Now you see me instead.&lt;/GenericAnimate>
+    &lt;/>
+}
+</code></pre>
+<!--|deDE:Eigenschaften-->
+<!--|frFR:Propriétés-->
+<h2>Properties</h2>
+<p>All properties are passed to &quot;CSSTransition&quot;. The most important ones:</p>
+<!--deDE:
+    Alle Eigenschaften werden an "CSSTransition" weitergereicht. Die
+    wichtigsten:
+-->
+<!--frFR:
+    Toutes les propriétés sont transmises à "CSSTransition". Les plus
+    importantes:
+-->
+<ul>
+<li>&quot;in&quot;: Shows the content if &quot;true&quot; (default), hides it if &quot;false&quot;.<!--deDE:"in": Zeigt den Inhalt bei "true" (Standard), blendet ihn bei "false" aus.--><!--frFR:"in": Affiche le contenu si "true" (par défaut), le masque si "false".--></li>
+<li>&quot;timeout&quot;: Duration in milliseconds until a transition is finished.
+Defaults to &quot;200&quot; which matches the included stylesheet.<!--deDE:"timeout": Dauer in Millisekunden, bis ein Übergang abgeschlossen ist. Standardmäßig "200", passend zum enthaltenen Stylesheet.--><!--frFR:"timeout": Durée en millisecondes jusqu'à la fin d'une transition. Par défaut "200", ce qui correspond à la feuille de style incluse.--></li>
+<li>&quot;appear&quot;: Animates on first mount as well. Defaults to &quot;true&quot;.<!--deDE:"appear": Animiert auch beim ersten Einhängen. Standardmäßig "true".--><!--frFR:"appear": Anime également au premier montage. Par défaut "true".--></li>
+<li>&quot;unmountOnExit&quot;: Removes the content after it is hidden. Defaults to
+&quot;true&quot;.<!--deDE:"unmountOnExit": Entfernt den Inhalt, nachdem er ausgeblendet wurde. Standardmäßig "true".--><!--frFR:"unmountOnExit": Retire le contenu une fois masqué. Par défaut "true".--></li>
+<li>&quot;classNames&quot;: Class name prefix for the transition states. Defaults to
+&quot;generic-animate&quot;.<!--deDE:"classNames": Präfix der Klassennamen für die Übergangszustände. Standardmäßig "generic-animate".--><!--frFR:"classNames": Préfixe des noms de classe pour les états de transition. Par défaut "generic-animate".--></li>
+<li>&quot;onEnter&quot;, &quot;onEntered&quot;, &quot;onExit&quot;, &quot;onExited&quot; and similar: Callbacks for the
+transition phases.<!--deDE:"onEnter", "onEntered", "onExit", "onExited" und ähnliche: Callbacks für die Übergangsphasen.--><!--frFR:"onEnter", "onEntered", "onExit", "onExited" et similaires: Callbacks pour les phases de transition.--></li>
+</ul>
+<!--|deDE:Eigene Animationen-->
+<!--|frFR:Animations personnalisées-->
+<h3>Custom animations</h3>
+<p>Give another class name prefix and define the transition states in your CSS:</p>
+<!--deDE:
+    Geben Sie ein anderes Klassennamen-Präfix an und definieren Sie die
+    Übergangszustände in Ihrem CSS:
+-->
+<!--frFR:
+    Indiquez un autre préfixe de nom de classe et définissez les états de
+    transition dans votre CSS:
+-->
+<pre class="prettyprint source lang-TypeScript"><code>&lt;GenericAnimate classNames=&quot;slide&quot; in={open} timeout={300}>
+    &lt;Menu />
+&lt;/GenericAnimate>
+</code></pre>
+<pre class="prettyprint source lang-CSS"><code>.slide-appear, .slide-enter {transform: translateY(-1em); opacity: 0}
+.slide-appear-active, .slide-enter-active {
+    transform: none;
+    opacity: 1;
+    transition: all 300ms ease-out;
+}
+.slide-exit {opacity: 1}
+.slide-exit-active {opacity: 0; transition: opacity 300ms ease-in}
+</code></pre>
+<!--|deDE:Entwicklung-->
+<!--|frFR:Développement-->
+<h2>Development</h2>
+<pre class="prettyprint source lang-bash"><code>yarn install
+yarn start
+yarn test
+</code></pre>
+<p>&quot;yarn start&quot; serves a playground with an example similar to the one above.</p>
+<!--deDE:"yarn start" stellt eine Spielwiese mit einem ähnlichen Beispiel wie oben bereit.-->
+<!--frFR:"yarn start" sert un terrain de jeu avec un exemple semblable à celui ci-dessus.--></article>
+    </section>
+
+
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.5</a> on Fri Nov 27 2026 12:23:01 GMT+0100 (Mitteleuropäische Normalzeit)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
